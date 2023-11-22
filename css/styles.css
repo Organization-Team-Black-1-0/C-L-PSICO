@@ -1,59 +1,103 @@
-﻿.vista-check-list{
-  height: 300vw;
-  max-width: 1200px;
-  color: yellow;
+﻿* {
+  box-sizing: border-box;
+  margin: 0;  
+    padding: 0;
+  color: white;
+
 }
 
-.icon-check-list {
+
+header.header-check-list-ap label {
+  font-size: small;
+  writing-mode: vertical-lr;
+  transform: rotate(-115deg);
+
+
+}
+
+
+body header.header-check-list-ap {
+  
+  /*justify-content: center;*/
+  /*background-position: center;*/
+
+ 
+  background-color: #546B7B;
+  
+  
+flex-direction: column;
+  /*align-items: center;*/
+  /*max-height: max-content;*/
+  /*padding: 10px;*/
+  /*margin-top: 0px;*/
+  position: fixed;
+  padding-bottom:5px;
+
+
+}
+
+
+body {
+  display: flex;
+  /*justify-content: center;*/
+  /*background-position: center;*/
+
+ 
+  background-color: #546B7B;
+  
+  
+  flex-direction: column;
+  /*align-items: center;*/
+  /*max-height: max-content;*/
+  /*padding: 10px;*/
+  /*margin-top: 0px;*/
+
+}
+
+div.container-check-list-ap {
+  display: grid;
+  grid-template-columns: 30px 45px 45px 45px 45px 45px 30px 500px;
+  grid-template-rows: repeat(1, 35px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-items: center;
+  
+  }
+
+  .vista-check-list-ap  	{padding-top: 60px;}
+  
+  .icon-check-list-ap {
   width: 30px;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 30px 35px 35px 35px 35px 35px 30px 500px;
-  grid-template-rows: repeat(4, 35px);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-align-items: center;
-
-}
-
-#resultado h3 {
-  background: yellow;
-  padding: 10px;
-  margin: 10p;
-  width: 360px;
-  height: 60px;
-}
-
-#resutado span {
-  color: #000;
+button {
+  border-radius: 55px;
+  background: #0b6efe;
+  border: none;
+  width: 9rem;
+  /*height: 3rem;
+  margin: 1rem;*/
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  border: outset;
   font-weight: bold;
-}
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+margin-left: 87px;}
 
-input[type="radio"] {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #ccc;
-}
 
-input[type="radio"]:checked {
-  background-color: #000;
-  color: #fff;
-} 
-
-input[type="submit"] {
-  width: 80px;
-  height: 30px;
-  margin: 20px;
-}
-
-.grado {
-  font-weight: bold;
-text-justify:auto ;
-text-align: center;
-}
-
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
