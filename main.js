@@ -20,5 +20,9 @@ function verifycheckradio() {
     var resultado = document.getElementById("resultado");
     resultado.innerHTML = '<h3> Obtuviste cumplimiento de <span>' + tantumpercent + '</span> por ciento en base a <span>' + itemevaluados + '</span> que decidio evaluar en los que hay <span>' + aok + '</span> item que estan bien y <span>'+ anotok + '</spant> que no cumplen</h3>';
 
+	
+	
     return false;
 }
+
+
